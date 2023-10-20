@@ -1,3 +1,13 @@
 .container {
   max-width: 960px;
 }
+
+/* Estilos para el checkbox validado */
+.form-check-input.is-valid:checked {
+  background-color: #4CAF50; /* Color verde */
+}
+
+#valid-feedback {
+  display: none; /* Ocultar el mensaje de validación al principio */
+  color: #4CAF50; /* Color verde */
+}
