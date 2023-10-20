@@ -33,6 +33,16 @@
         }
     }
 
-    document.getElementById("submitButton").addEventListener("click", function() {
-        alert("Te has registrado");
-    });
+    function validarRegistro() {
+        // Realiza aquí la validación de los campos, por ejemplo:
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+    
+        if (nombre && email) {
+            alert("Te has registrado");
+        } else {
+            alert("Por favor, completa todos los campos antes de registrarte.");
+        }
+    }
+    
+    document.getElementById("submitButton").addEventListener("click", validarRegistro);
