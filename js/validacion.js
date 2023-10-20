@@ -34,15 +34,21 @@
     }
 
     function validarRegistro() {
-        // Realiza aquí la validación de los campos, por ejemplo:
-        var nombre = document.getElementById("nombre").value;
-        var email = document.getElementById("email").value;
+        var nombreInput = document.getElementById("nombre");
+        var emailInput = document.getElementById("email");
+        var apellidoInput = document.getElementById("apellido");
     
-        if (nombre && email) {
+        if (nombreInput.value && emailInput.value && apellidoInput.value) {
             alert("Te has registrado");
+            nombreInput.value = ''; // Borra el valor del campo Nombre
+            emailInput.value = '';  // Borra el valor del campo Email
+            apellidoInput.value  = '';
         } else {
             alert("Por favor, completa todos los campos antes de registrarte.");
         }
     }
     
     document.getElementById("submitButton").addEventListener("click", validarRegistro);
+    
+
+    
