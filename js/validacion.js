@@ -32,3 +32,7 @@
             validFeedback.style.display = "none";
         }
     }
+
+    document.getElementById("submitButton").addEventListener("click", function() {
+        alert("Te has registrado");
+    });
