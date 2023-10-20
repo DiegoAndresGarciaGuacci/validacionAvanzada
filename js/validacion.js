@@ -37,12 +37,16 @@
         var nombreInput = document.getElementById("nombre");
         var emailInput = document.getElementById("email");
         var apellidoInput = document.getElementById("apellido");
+        var password1Input = document.getElementById("password1");
+        var password2Input = document.getElementById("password2");
     
-        if (nombreInput.value && emailInput.value && apellidoInput.value) {
+        if (nombreInput.value && emailInput.value && apellidoInput.value && password1Input.value && password2Input.value ) {
             alert("Te has registrado");
             nombreInput.value = ''; // Borra el valor del campo Nombre
             emailInput.value = '';  // Borra el valor del campo Email
             apellidoInput.value  = '';
+            password1Input.value  = '';
+            password2Input.value  = '';
         } else {
             alert("Por favor, completa todos los campos antes de registrarte.");
         }
